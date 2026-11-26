@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 salary_lookup.py *)",
+      "Bash(npm view *)"
+    ]
+  }
+}

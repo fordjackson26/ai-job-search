@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for R. Ford Jackson
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for R. Ford Jackson, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,68 +10,66 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:** [YOUR_LANGUAGES]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Name:** R. Ford Jackson
+- **Location:** Dallas, TX, USA (based in Dallas; open to relocating to Seattle, WA or California; onsite or hybrid both fine)
+- **Languages:** English (native)
+- **Status:** Employed full-time (Technical Consultant, Pariveda Solutions)
+- **LinkedIn headline:** "Software Engineer"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **BA in Computer Science** (2019-2023) - Southern Methodist University, Bobby B. Lyle School of Engineering, Dallas, TX
+  - GPA: 3.79
+  - Topics: Algorithms, Data Structures, Agile Development, Waterfall Development, Scrum, MVC Architecture
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Technical Consultant** (01/2025 - Present) - **Pariveda Solutions** (Dallas, TX)
+  - Software engineer on an agile team working across a React/Knockout.js frontend and Java backend, with additional Node.js, SQL (including multi-table schema design), TypeScript, and RabbitMQ message queue work
+  - Collaborate with a large cross-functional team, communicating clearly with stakeholders to ensure deliverables meet requirements
+- **Software Engineer** (10/2022 - 1/2023 & 07/2023 - 12/2024) - **The Contract Network**
+  - Built and deployed AWS serverless Lambda functions powering AI functionality within the platform, using Docker for containerization and AWS SQS for asynchronous message processing
+  - Delivered custom GraphQL resolvers to improve backend request handling; developed internal tools for analyst curation and monitoring of large datasets
+  - Wrote backend unit tests, delivered repository-wide logging, participated in code review, and supported production deployment/monitoring and debugging
+- **Software Engineering Intern** (06/2022 - 08/2022) - **AT&T**
+  - Implemented features for a web app allowing field technicians to manage schedules more efficiently, using Node.js and SQL
+  - Added universal components and updated APIs to current standards
+
+### Independent Projects
+- **Sentiment Analyzer**: Algorithm to classify tweet sentiment using a pre-classified dataset and word-frequency analysis
+- **Vax Stax**: Express.js backend (23 endpoints) for a vaccine-status tracking site used by schools to monitor student status
+- **Covid-19 Search Engine**: Parsed a COVID-19 research JSON corpus into an AVL-tree inverted index and hash table; implemented Boolean multi-term and author search
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** JavaScript, TypeScript, React, Python, Java, C/C++, C#, Node.js, SQL
+- **Secondary:** AngularJS, MATLAB, Assembly, Knockout.js
+- **Domain:** Full-stack web development, serverless/cloud (AWS Lambda), GraphQL API design, data structures & algorithms, multi-platform development (desktop and mobile), cybersecurity principles (coursework)
+- **Software:** AWS, Lambda, Docker, RabbitMQ, AWS SQS, Claude Code (daily AI-assisted development), Postman, Jira, Agile/Scrum, Waterfall, MVC architecture
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- None at this time
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None at this time
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- None at this time
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Pending** - formal behavioral assessment not yet available. Run `/setup --section behavioral` to add it once accessible.
+- From resume self-description: thrives on collaboration, cross-functional teamwork, and delivering creative/elegant technical solutions to complex challenges
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Solving complex backend and data engineering challenges
+- Cross-functional collaboration on technical solutions
+- AI-adjacent engineering work (built on Lambda-based AI functionality experience at The Contract Network)
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Software/Technology (general): no specific target companies identified yet
 
 ### Deal-breakers
-<!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- None specified
+- Salary baseline: $100k
+- Onsite or hybrid both acceptable
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

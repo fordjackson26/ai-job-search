@@ -105,12 +105,11 @@ Write 5-7 lines that function as an "elevator pitch": a concise, compelling intr
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Full-Stack / Software Engineer roles:**
+> Software engineer with 3+ years of hands-on experience building full-stack web applications, from React/Knockout.js frontends to Java and serverless backends. Combines strong fundamentals in data structures, algorithms, and Agile development with practical experience delivering AWS Lambda-based features, custom GraphQL resolvers, message queue integrations (RabbitMQ, AWS SQS), and internal data-curation tools. Thrives on cross-functional collaboration and delivering creative, elegant solutions to complex technical challenges.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Backend / Cloud Engineer roles:**
+> Backend-focused software engineer experienced in designing and deploying AWS serverless Lambda functions, GraphQL APIs, and internal tooling for large-scale data curation and monitoring. Strong foundation in data structures and algorithms (AVL trees, hash tables, inverted indices) from independent projects, paired with production experience in testing, logging, code review, and deployment monitoring.
 
 ### Core Competencies / Skills Section (Best Practice)
 Reorder and emphasize based on the role. Use bold category labels.

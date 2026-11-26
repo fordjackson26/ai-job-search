@@ -10,28 +10,36 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+<!-- Fill in the S/T/A/R details below with real specifics before using in an interview - -->
+<!-- the resume only gave high-level bullets, so situation/result specifics need your input. -->
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 1. AWS Lambda AI Functionality (Serverless / Cloud Engineering)
+**S:** The Contract Network's platform needed AI-related functionality delivered as part of its backend.
+**T:** Build and deploy the serverless infrastructure to support this functionality.
+**A:** Built and deployed AWS Lambda functions to power the AI functionality within the platform.
+**R:** *(Fill in: adoption, performance impact, or scale achieved)*
+**Use for:** "Tell me about a time you worked with cloud/serverless architecture", "Describe a project involving AI integration"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Custom GraphQL Resolvers (Backend API Design)
+**S:** The backend stack needed better handling of requests from users.
+**T:** Improve how the backend served and resolved user requests.
+**A:** Delivered custom GraphQL resolvers to the backend stack.
+**R:** *(Fill in: latency improvement, reduced overfetching, developer experience improvement, etc.)*
+**Use for:** "Describe a backend/API design challenge you solved", "How do you approach improving system performance?"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. Covid-19 Search Engine (Data Structures & Algorithms, Independent Project)
+**S:** Personal project to make a large corpus of Covid-19 research searchable.
+**T:** Design a search system able to handle multi-word and author queries efficiently.
+**A:** Parsed the JSON research database, built a reversed index of words to articles stored in an AVL tree, stored authors and their articles in a hash table, and implemented a Boolean query system.
+**R:** Delivered a working search engine supporting multi-word and author-specific queries.
+**Use for:** "Tell me about a project where you designed a data structure/algorithm from scratch", "Describe independent/self-directed technical work"
+
+### 4. Field Technician Scheduling Feature (Cross-Team Delivery, AT&T Internship)
+**S:** Field technicians at AT&T needed better tools to manage their schedules within an existing web app.
+**T:** Implement new features to support schedule management, as an intern working within an established codebase.
+**A:** Implemented the scheduling features, added universal components, and updated the API to current standards.
+**R:** *(Fill in: technician feedback, team outcome, or what you learned)*
+**Use for:** "Tell me about your internship experience", "Describe a time you contributed to an existing/legacy codebase"
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 

@@ -1,70 +1,67 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
-
 ## Search Sites
 
-Primary (Danish job market):
-- **jobindex.dk** - largest Danish job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: Denmark / your city)
-- **karriere.dk** - IDA's job board (engineering/science roles)
-- **jobfinder.dk** - another major Danish job board
-- **akademikernes.dk** - academic union job board
+Primary (US job market):
+- **linkedin.com/jobs** - LinkedIn job listings (filter: Dallas, Seattle, California)
+- **indeed.com** - Indeed job board
+- **glassdoor.com** - Glassdoor job listings (also useful for company reviews/salary research)
+- **builtinseattle.com** / **builtin.com** - Built In network (Seattle and national tech job boards)
 
 Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+- Direct Google searches with `site:` filters for known target companies (none identified yet - add as they come up)
 
 ## Query Categories
 
-Queries are grouped by priority. Each query should be combined with your location terms (e.g. "Copenhagen", "Sjælland", "Hovedstaden") where the site supports it.
+Queries are grouped by priority. Each query should be combined with location terms (Dallas, Seattle, or California) where the site supports it.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Software Engineer (Full-Stack)
 
-These match your strongest and most desired career direction.
-
-```
-site:jobindex.dk "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:jobindex.dk "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+These match the strongest and most desired career direction - full-stack roles spanning React/frontend and backend (Java, serverless).
 
 ```
-site:jobindex.dk [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:jobindex.dk [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs "Software Engineer" Dallas
+site:linkedin.com/jobs "Software Engineer" Seattle
+site:linkedin.com/jobs "Software Engineer" California
+site:indeed.com "Full Stack Engineer" Dallas OR Seattle OR California
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 2: Backend / Cloud Engineer
 
-Adjacent roles you could pivot into.
+These match domain expertise in AWS Lambda, serverless, and GraphQL.
 
 ```
-site:jobindex.dk "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:jobindex.dk "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:linkedin.com/jobs "Backend Engineer" AWS Dallas OR Seattle OR California
+site:indeed.com "Backend Software Engineer" GraphQL
+site:linkedin.com/jobs "Cloud Engineer" AWS Lambda Seattle OR California
+```
+
+### Priority 3: Adjacent Roles
+
+Adjacent roles to pivot into.
+
+```
+site:linkedin.com/jobs "Software Developer" React Dallas OR Seattle OR California
+site:indeed.com "Application Developer" JavaScript Python
 ```
 
 ### Priority 4: Broader Technical / Consulting
 
-Wider net for general technical roles.
+Wider net for general technical roles (Ford is currently a Technical Consultant at Pariveda Solutions).
 
 ```
-site:jobindex.dk [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:jobindex.dk "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "Technical Consultant" software Dallas OR Seattle OR California
+site:indeed.com "Software Engineer" entry level OR "2 years experience"
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+When evaluating results, check the job location against these tiers:
+- **Dallas, TX** and surrounding areas - ideal (current base)
+- **Seattle, WA** - ideal (open to relocation)
+- **California** (any major tech hub - SF Bay Area, LA, San Diego) - ideal (open to relocation)
+- Fully remote (US) - acceptable
+- Any other location requiring relocation - flag with the user before proceeding, not yet discussed
 
 ## Date Filter
 
@@ -73,4 +70,4 @@ Only include jobs posted within the last 14 days, or with an application deadlin
 ## Adapting Queries
 
 If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
-- "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries
+- "/scrape backend" -> Priority 2 queries + custom backend-specific queries
