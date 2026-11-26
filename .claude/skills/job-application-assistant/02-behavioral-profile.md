@@ -4,11 +4,11 @@ framework_version: 1.0.0
 
 # Behavioral Profile
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- You can use results from PI, DISC, Myers-Briggs, StrengthsFinder, or a self-assessment -->
+<!-- PENDING: Ford has a formal behavioral assessment but doesn't have access to it yet. -->
+<!-- Run /setup --section behavioral once it's available to replace this file with real results. -->
 
 ## Overview
-[YOUR_NAME]'s behavioral assessment identifies them as a **[PROFILE_TYPE]** pattern. [1-2 SENTENCE_SUMMARY].
+R. Ford Jackson has a formal behavioral assessment on file but does not currently have access to the results. This section is a placeholder until then. In the meantime, from the resume's self-description: thrives on collaboration, cross-functional teamwork, and delivering creative/elegant technical solutions to complex challenges. *[Inferred from resume text - review before relying on this]*
 
 ## Core Behavioral Drives
 

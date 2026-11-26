@@ -1,7 +1,5 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
-
 ## Installed portal CLIs (primary for `/scrape`)
 
 `/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. None ship with AI Job Search: copy the ones for your market from [community-portals](https://github.com/ai-job-search-dev/community-portals) (e.g. `linkedin-search`, `freehire-search` under `portals/global/`), or build one with `/add-portal`. You do **not** need a matching `site:` line below for those CLIs to run.
@@ -12,108 +10,108 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by the community `linkedin-search` CLI once installed
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary (US job market):
+- **linkedin.com/jobs** - LinkedIn job listings (filter: Dallas, Seattle, California)
+- **indeed.com** - Indeed job board
+- **glassdoor.com** - Glassdoor job listings (also useful for company reviews/salary research)
+- **builtinseattle.com** / **builtin.com** - Built In network (Seattle and national tech job boards)
 
 Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+- Direct Google searches with `site:` filters for known target companies (none identified yet - add as they come up)
 
 ## Query Categories
 
-Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with your location terms (e.g. your city, region, or metro area) where the site supports it.
+Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with location terms (Dallas, Seattle, or California) where the site supports it.
 
 Each priority has two kinds of block. **Plain terms** blocks are what the portal CLIs consume: one term per line, one CLI call per term, no `OR`, no `site:` prefix, and no location (the CLI's location flag, or the city in `--query` where that portal's SKILL.md says so, carries it). Quote a multi-word phrase only if the portal's `Query syntax:` line says quoting is honoured. **WebSearch-only** blocks are Google syntax (`site:`, quotes, `OR`) for the fallback path and are never passed to a CLI.
 
 **Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Software Engineer (Full-Stack)
 
-These match your strongest and most desired career direction.
+These match the strongest and most desired career direction - full-stack roles spanning React/frontend and backend (Java, serverless).
 
 #### Plain terms (portal CLIs)
 
 ```
-[YOUR_PRIMARY_JOB_TITLE_1]
-[YOUR_PRIMARY_JOB_TITLE_2]
-[YOUR_KEY_SKILL]
+Software Engineer
+Full Stack Engineer
+Full Stack Developer
 ```
 
 #### WebSearch-only (`site:` fallback)
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
+site:linkedin.com/jobs "Software Engineer" Dallas
+site:linkedin.com/jobs "Software Engineer" Seattle
+site:linkedin.com/jobs "Software Engineer" California
+site:indeed.com "Full Stack Engineer" Dallas OR Seattle OR California
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+### Priority 2: Backend / Cloud Engineer
 
-These match your domain expertise.
+These match domain expertise in AWS Lambda, serverless, and GraphQL.
 
 #### Plain terms (portal CLIs)
 
 ```
-[YOUR_DOMAIN_KEYWORD_1]
-[YOUR_DOMAIN_KEYWORD_2]
+Backend Engineer
+Backend Software Engineer
+Cloud Engineer
 ```
 
 #### WebSearch-only (`site:` fallback)
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs "Backend Engineer" AWS Dallas OR Seattle OR California
+site:indeed.com "Backend Software Engineer" GraphQL
+site:linkedin.com/jobs "Cloud Engineer" AWS Lambda Seattle OR California
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 3: Adjacent Roles
 
-Adjacent roles you could pivot into.
+Adjacent roles to pivot into.
 
 #### Plain terms (portal CLIs)
 
 ```
-[YOUR_ADJACENT_TITLE_1]
-[YOUR_ADJACENT_TITLE_2]
+Software Developer
+Application Developer
 ```
 
 #### WebSearch-only (`site:` fallback)
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:linkedin.com/jobs "Software Developer" React Dallas OR Seattle OR California
+site:indeed.com "Application Developer" JavaScript Python
 ```
 
 ### Priority 4: Broader Technical / Consulting
 
-Wider net for general technical roles.
+Wider net for general technical roles (Ford is currently a Technical Consultant at Pariveda Solutions).
 
 #### Plain terms (portal CLIs)
 
 ```
-[YOUR_KEY_SKILL] developer
-technical consultant
+Software Engineer
+Technical Consultant
 ```
 
 #### WebSearch-only (`site:` fallback)
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "Technical Consultant" software Dallas OR Seattle OR California
+site:indeed.com "Software Engineer" entry level OR "2 years experience"
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+When evaluating results, check the job location against these tiers:
+- **Dallas, TX** and surrounding areas - ideal (current base)
+- **Seattle, WA** - ideal (open to relocation)
+- **California** (any major tech hub - SF Bay Area, LA, San Diego) - ideal (open to relocation)
+- Fully remote (US) - acceptable
+- Any other location requiring relocation - flag with the user before proceeding, not yet discussed
 
 ## Language Filter
 
@@ -126,4 +124,4 @@ Only include jobs posted within the last 14 days, matching `/scrape` Step 1b.3: 
 ## Adapting Queries
 
 If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
-- "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries
+- "/scrape backend" -> Priority 2 queries + custom backend-specific queries
