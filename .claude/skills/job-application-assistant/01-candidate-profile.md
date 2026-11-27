@@ -1,3 +1,7 @@
+---
+framework_version: 1.1.1
+---
+
 # Candidate Profile
 
 ## Identity
@@ -7,9 +11,18 @@
 - **Email:** Ford_Jackson@icloud.com
 - **LinkedIn:** https://www.linkedin.com/in/ford-jackson973a40156/
 - **GitHub:** Not provided
-- **Languages:** English (native)
 - **Status:** Employed full-time (Technical Consultant, Pariveda Solutions)
 - **Constraints:** Based in Dallas, TX; open to relocating to Seattle, WA or California; onsite or hybrid both acceptable
+
+### Languages
+<!-- Every language you can work in professionally, with your honest level. Used by the
+Language Gate in 04-job-evaluation.md and by job-scraper/search-queries.md's query-language
+generation. Omit any language you don't actually work in - an undeclared language is treated as
+a hard no, not a gap to smooth over. -->
+
+| Language | Level | Notes |
+|----------|-------|-------|
+| English | Native | |
 
 ## Education
 

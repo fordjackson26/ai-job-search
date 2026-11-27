@@ -55,7 +55,8 @@
       "Bash(lualatex -interaction=nonstopmode main_bytedance.tex)",
       "Bash(xelatex -interaction=nonstopmode cover_bytedance_swegraduatecloudnativeinfra.tex)",
       "Bash(lualatex -interaction=nonstopmode main_opendoor.tex)",
-      "Bash(xelatex -interaction=nonstopmode cover_opendoor_softwareengineer.tex)"
+      "Bash(xelatex -interaction=nonstopmode cover_opendoor_softwareengineer.tex)",
+      "Bash(npm view *)"
     ]
   }
 }
